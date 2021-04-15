@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #222222;
+}
+.aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100vh;
+  background: #333333;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.aside div {
+  width: 250px;
+  height: 200px;
+  background: #222222;
+  border: 1px solid #555555;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+.aside div img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.aside div span {
+  display: inline-block;
+  font-weight: 600;
+  padding: 5px;
+  color: #ffffff;
+}
+.brightness {
+  filter: brightness(1.5);
+}
+.contrast {
+  filter: contrast(1.5);
+}
+.grayscale {
+  filter: grayscale(1);
+}
+.saturate {
+  filter: saturate(1.5);
+}
+.invert {
+  filter: invert(1);
+}
+.imgBx {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-75%, -50%);
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  background: #333333;
+  border: 1px solid #555555;
+  border-radius: 20px;
+}
+.imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit:scale-down;
+  border-radius: 10px;
+}
